@@ -1,11 +1,10 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace NLayer.Repository.Migrations
 {
-    public partial class initial : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -90,15 +89,15 @@ namespace NLayer.Repository.Migrations
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "Name", "Price", "Stock", "UpdateDate" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2024, 5, 28, 23, 3, 45, 318, DateTimeKind.Local).AddTicks(8294), "Kalem 1", 100m, 20, null },
-                    { 2, 1, new DateTime(2024, 5, 28, 23, 3, 45, 318, DateTimeKind.Local).AddTicks(8303), "Kalem 2", 110m, 25, null },
-                    { 3, 1, new DateTime(2024, 5, 28, 23, 3, 45, 318, DateTimeKind.Local).AddTicks(8304), "Kalem 3", 120m, 30, null },
-                    { 4, 2, new DateTime(2024, 5, 28, 23, 3, 45, 318, DateTimeKind.Local).AddTicks(8306), "Kitap 1", 1000m, 20, null },
-                    { 5, 2, new DateTime(2024, 5, 28, 23, 3, 45, 318, DateTimeKind.Local).AddTicks(8307), "Kitap 2", 1100m, 25, null },
-                    { 6, 2, new DateTime(2024, 5, 28, 23, 3, 45, 318, DateTimeKind.Local).AddTicks(8308), "Kitap 3", 1200m, 30, null },
-                    { 7, 3, new DateTime(2024, 5, 28, 23, 3, 45, 318, DateTimeKind.Local).AddTicks(8310), "Defter 1", 500m, 20, null },
-                    { 8, 3, new DateTime(2024, 5, 28, 23, 3, 45, 318, DateTimeKind.Local).AddTicks(8312), "Defter 2", 510m, 25, null },
-                    { 9, 3, new DateTime(2024, 5, 28, 23, 3, 45, 318, DateTimeKind.Local).AddTicks(8312), "Defter 3", 520m, 30, null }
+                    { 1, 1, new DateTime(2024, 6, 11, 14, 25, 7, 987, DateTimeKind.Local).AddTicks(9068), "Kalem 1", 100m, 20, null },
+                    { 2, 1, new DateTime(2024, 6, 11, 14, 25, 7, 987, DateTimeKind.Local).AddTicks(9076), "Kalem 2", 110m, 25, null },
+                    { 3, 1, new DateTime(2024, 6, 11, 14, 25, 7, 987, DateTimeKind.Local).AddTicks(9077), "Kalem 3", 120m, 30, null },
+                    { 4, 2, new DateTime(2024, 6, 11, 14, 25, 7, 987, DateTimeKind.Local).AddTicks(9077), "Kitap 1", 1000m, 20, null },
+                    { 5, 2, new DateTime(2024, 6, 11, 14, 25, 7, 987, DateTimeKind.Local).AddTicks(9078), "Kitap 2", 1100m, 25, null },
+                    { 6, 2, new DateTime(2024, 6, 11, 14, 25, 7, 987, DateTimeKind.Local).AddTicks(9079), "Kitap 3", 1200m, 30, null },
+                    { 7, 3, new DateTime(2024, 6, 11, 14, 25, 7, 987, DateTimeKind.Local).AddTicks(9079), "Defter 1", 500m, 20, null },
+                    { 8, 3, new DateTime(2024, 6, 11, 14, 25, 7, 987, DateTimeKind.Local).AddTicks(9080), "Defter 2", 510m, 25, null },
+                    { 9, 3, new DateTime(2024, 6, 11, 14, 25, 7, 987, DateTimeKind.Local).AddTicks(9081), "Defter 3", 520m, 30, null }
                 });
 
             migrationBuilder.InsertData(
